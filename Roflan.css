@@ -451,7 +451,7 @@ div.text_week_admin{
 	}
 	div.fon_login{
 		background-image: url("images/login_background_mobile.jpg");
-		min-height:40%;
+		/* min-height:40%; */
 	}
 }
 @media screen and (max-width:480px){
@@ -509,9 +509,9 @@ div.text_week_admin{
 	}
 }
 form.otziv{
+	padding:10px 80px;
 	margin: 50px 0 0;
 	border-radius: 15px;
-	width: 90%;
 }
 @media screen and (max-width:350px){
 	form.otziv{
