@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Roflan.css" type="text/css">
+		<title>Roflan Royale Главная</title>
+		<script src="Roflan.js"></script>
+	</head>
+	<body>
+		<div  class="fon_login">
+
+			<header id="header">
+				<div class="name">
+					<img class="logo" src="images/logo.jpg" alt="logo"><div class="Roflan">RoflanRoyale</div>
+				</div>
+				<nav>
+					<ul class="nav_menu">
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_main.html" id="main">Главная</a></li>
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_decks.html" id="decks"> Смешные<br/>колоды</a></li>
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_week.html" id="week"> Колода<br/> недели</a></li>
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_otziv.html" id="login">Отзыв</a></li>
+					</ul>
+				</nav>
+				<div id="burger">
+						<div class="Roflan"><img class="logo" src="images/logo.jpg" alt="logo">RoflanRoyale</div>
+					<ul class="nav_menu">
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_main.html" id="main">Главная</a></li>
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_decks.html" id="decks"> Смешные<br/>колоды</a></li>
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_week.html" id="week"> Колода<br/> недели</a></li>
+						<li class="nav_buttons"><a class="nav_link" href="Roflan_otziv.html" id="login">Отзыв</a></li>
+					</ul>
+					<img id="close" onclick="close_footer()" src="images/close_footer.jpg">
+				</div>
+			</header>
+			<main class="main_login">
+				<div class="greeting">
+					Отзыв<img id="burger_img" onclick="show_burger()" src="images/burger.jpg">
+				</div>
+				<form class="otziv" action="https://formspree.io/f/xbdeegvb" method="POST">
+					<legend>Оставьте отзыв</legend>
+					<div class="chose">
+						<label>Выберите колоду:</label>
+						<select id="chose_deck" name="deck">
+							<option>Большие мальчики</option>
+							<option>Свиноферма</option>
+							<option>Македонская фаланга</option>
+							<option>Шустрый ларри</option>
+							<option>Откуда у них элик</option>
+							<option>Летучка</option>
+							<option>Плохая погода</option>
+							<option>Шахеды</option>
+						</select>
+					</div>
+						<textarea name="review"></textarea>
+					
+						<a href="mailto:borodkin2008@inbox"><input type="submit" onclick="svyaz()"></a>
+					
+				</form>
+				<div id="svyaz">
+					Ваш отзыв отправлен! Мы свяжемся с вами в скором времени!
+					<button id="close_svyaz" onclick="сlose_svyaz()">Закрыть</button>
+				</div>
+				<div class="top">
+					<a class="top_ref" href="#top">Наверх</a>
+				</div>
+			</main>
+			<footer>
+				<div class="zaglushka">
+					Напишите нам!
+				</div>
+				<div class="contact">
+					<a href="https://vk.com/temychacha"><img class="social-media" id="VK" src="images/VK.jpg"></a>@temychacha
+				</div>
+				<div class="contact">
+					<a href="https://t.me/temychacha"><img class="social-media" id="TG" src="images/TG.jpg"></a>@temychacha
+				</div>
+				<div class="contact">
+					<img class="social-media" id="PHONE" src="images/PHONE.jpg">+7(921) 281-70-74
+				</div>
+			</footer>
+		</div>
+		<script src="Roflan.js"></script>
+	</body>
+</html>
