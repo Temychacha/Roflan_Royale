@@ -456,7 +456,10 @@ div.text_week_admin{
 }
 @media screen and (max-width:480px){
 	form.otziv{
-		margin:300px 0;
+		margin: 100px 0;
+		border-radius: 15px;
+		width: 90%;
+
 	}
 	div.chose{
 		display:flex;
@@ -503,5 +506,15 @@ div.text_week_admin{
 	}
 	div.greeting{
 		
+	}
+}
+form.otziv{
+	margin: 50px 0 0;
+	border-radius: 15px;
+	width: 90%;
+}
+@media screen and (max-width:350px){
+	form.otziv{
+		margin:10px 0;
 	}
 }
